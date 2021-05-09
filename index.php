@@ -1,3 +1,3 @@
 <?php
-include_once("/home/aaswin/blackjack-js/index.html");
+include_once("index.html");
 ?>
