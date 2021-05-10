@@ -14,9 +14,9 @@ let blackjackGame = {
 
 const YOU =blackjackGame['you']
 const DEALER=blackjackGame['dealer']
-const hitSound= new Audio('/home/aaswin/blackjack-js/sounds/swish.m4a');
-const winSound= new Audio('/home/aaswin/blackjack-js/sounds/cash.mp3')
-const lostSound=new Audio('/home/aaswin/blackjack-js/sounds/aww.mp3')
+const hitSound= new Audio('sounds/swish.m4a');
+const winSound= new Audio('sounds/cash.mp3');
+const lostSound=new Audio('sounds/aww.mp3');
 
 document.querySelector('#blackjack-hit-button').addEventListener('click', blackjackHit );
 
@@ -43,7 +43,7 @@ function showCard(card, activePlayer){
     if (activePlayer['score']<= 21){
   
     let cardImage = document.createElement('img');
-    cardImage.src =`/home/aaswin/blackjack-js/images/${card}.png`;//string templating /home/aaswin/blackjack-js/blackjack-js/images/${card}.png
+    cardImage.src =`images/${card}.png`;//string templating /home/aaswin/blackjack-js/blackjack-js/images/${card}.png
     document.querySelector(activePlayer['div']).appendChild(cardImage);
     hitSound.play(); 
   }
